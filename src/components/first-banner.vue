@@ -1,10 +1,16 @@
 <template>
   <div class="container">
-      <div class="background">
-          <img class="bg-design" id="left" draggable="false" src='../assets/background/bg-design-left.png' alt="bg-design-left">
-          <img class="bg-design" id="right" draggable="false" src='../assets/main/yellow-om-trans.png' alt="yellow-om-trans">
-      </div>
-      
+
+    <p class="quote">"We are dedicated to bringing you the
+      <br>
+      most authentic Indian products" 
+      </p>
+
+    <div class="background">
+      <img class="bg-left" src="../assets/background/bg-design-left.png" draggable="false" alt="bg-left">
+      <img class="bg-right" src="../assets/main/yellow-om-trans.png" draggable="false" alt="bg-right">
+    </div>
+
   </div>
 </template>
 
@@ -17,34 +23,36 @@ export default {
 <style scoped>
 
 .container {
-    height: 100%;
+    padding-top: 50px;
+    max-width: 1500px;
     margin: 0 auto;
-    max-width: 1600px;
-    overflow: hidden;
+    position: relative;
 }
 
 .background {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    border: 3px solid blue;
-    height: 100vh;
+    height: 500px;
 }
 
-
-#left {
-    height: 70%;
-    min-height: 350px;
-    opacity: 0.25;
+.bg-left {
+    opacity: 0.15;
+    height: 400px;
 }
 
-#right {
-    height: 100vh;
-    min-height: 350px;
-    margin-top: 100px;
-
+.bg-right {
+    height: 100%;
 }
 
+.quote {
+    position: absolute;
+    /* border: 1px solid blue; */
+    font-family: cursive;
+    font-size: 35px;
+    top: 220px;
+    left: 15%;
+    text-align: right;
+}
 
 </style>

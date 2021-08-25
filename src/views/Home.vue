@@ -1,5 +1,5 @@
 <template>
-  <h1>Home</h1>
+<div></div>
 </template>
 
 <script>
@@ -11,3 +11,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+div {
+  height: 1000px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+</style>
