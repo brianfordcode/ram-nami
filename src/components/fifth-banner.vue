@@ -34,7 +34,7 @@ export default {
 
 .form {
     /* border: 1px solid blue; */
-    height: 685px;
+    height: 710px;
     overflow: hidden;
 }
 

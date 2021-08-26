@@ -1,17 +1,15 @@
 <template>
 
   <navBar class="nav-bar"/>
-  <!-- <router-view/> -->
     <firstBanner/>
     <secondBanner/>
     <thirdBanner/>
     <fourthBanner/>
     <fifthBanner/>
+  <bottomFooter/>
 
 
   <!-- <router-view/> -->
-
-
 
 </template>
 
@@ -27,6 +25,7 @@
 </style>
 
 <script>
+import bottomFooter from './components/bottom-footer.vue'
 import fifthBanner from './components/fifth-banner.vue'
 import fourthBanner from './components/fourth-banner.vue'
 import thirdBanner from './components/third-banner.vue'
@@ -36,7 +35,7 @@ import navBar from './components/nav-bar.vue'
 
 export default {
   components: {
-    navBar, firstBanner, secondBanner, thirdBanner, fourthBanner, fifthBanner
+    navBar, firstBanner, secondBanner, thirdBanner, fourthBanner, fifthBanner, bottomFooter
   }
 }
 </script>
