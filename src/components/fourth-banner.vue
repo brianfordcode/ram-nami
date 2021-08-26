@@ -8,14 +8,17 @@
 
 
         
-        <div class="review-wrapper">
-            <img class="arrow" src="https://img.icons8.com/fluency-systems-filled/48/000000/circled-left-2--v2.png"/>
-            <div class="review" v-for="review in reviews"  :key="review.id">
-                <p>{{ review.text }}</p>
-                <p class="review-name">{{ review.name }}</p>
-            </div>
-            <img class="arrow" src="https://img.icons8.com/fluency-systems-filled/48/000000/circled-right-2--v2.png"/>
-        </div>
+        <carousel class="review-wrapper">
+            <slide v-for="review in reviews" :key="review.id">
+                <div class="review">
+                    <p>{{ review.text }}</p>
+                    <p class="review-name">{{ review.name }}</p>
+                </div>
+            </slide>
+            <template #addons>
+                <navigation />
+            </template>
+        </carousel>
             
 
 
@@ -33,13 +36,36 @@
 </template>
 
 <script>
+
+import 'vue3-carousel/dist/carousel.css';
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+
+
+
+
 export default {
+    components: { 
+        Carousel,
+        Slide,
+        Pagination,
+        Navigation,
+    },
     data() {
         return {
             reviews: [
                 {   
                     id: 1,
                     text: "\"I'm a new customer and I absolutely love my scarf. Super fast delivery...I will definitely order again. Many thanks.\"",
+                    name: "- Zoe"
+                },
+                {   
+                    id: 1,
+                    text: "\"I'm a new custoasdfasdfsdalutely love my scarf. Super fast delivery...I will definitely order again. Many thanks.\"",
+                    name: "- Zoe"
+                },
+                {   
+                    id: 1,
+                    text: "\"I'm a new aasdfadsfasdfafasdfasdfasdfasdftely love my scarf. Super fast delivery...I will definitely order again. Many thanks.\"",
                     name: "- Zoe"
                 },
             ]
@@ -76,7 +102,7 @@ export default {
 
 .text-wrapper {
     position: absolute;
-    top: 50px;
+    top: 30px;
     right: 150px;
     /* border: 1px solid blue; */
     /* height: 100%; */
@@ -89,22 +115,24 @@ export default {
 }
 
 .customers {
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .stars {
     padding-top: 10px;
-    width: 500px;
+    width: 400px;
 }
 
 .average {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .review-wrapper {
     /* border: 1px solid black; */
-    width: 550px;
-    margin-top: 30px;
+
+    height: 100%;
+    width: 400px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,8 +153,9 @@ export default {
     box-shadow: 0px 0px 33px -20px #000000;
     background-color: rgba(255,255,255,0.75);
     text-align: center;
+    width: 350px;
     font-size: 20px;
-    width: 400px;
+    margin: 20px;
 }
 
 .review-name {
@@ -134,4 +163,14 @@ export default {
     padding-right: 50px;
 }
 
+</style>
+
+<style>
+.carousel__prev,
+.carousel__next {
+	box-sizing: content-box;
+	/* border: 5px solid white; */
+    background-color: black;
+    opacity: 0.5;
+}
 </style>

@@ -32,7 +32,7 @@ export default {
 p {
     margin-top: 10px;
     font-family: cursive;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .inner-wrapper {
@@ -48,7 +48,7 @@ p {
 
 .logo {
     height: auto;
-    width: 120px;
+    width: 100px;
     transition: .1s ease-in-out;
 }
 
