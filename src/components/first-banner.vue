@@ -50,6 +50,7 @@ export default {
     /* border: 1px solid blue; */
     font-family: cursive;
     font-size: 35px;
+    color: #2C3345;
     top: 220px;
     left: 15%;
     text-align: right;

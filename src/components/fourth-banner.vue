@@ -5,8 +5,6 @@
         <img class="stars" src="../assets/main/5-star-rating.png" alt="">
         <p class="average">Average 4.9 Star Rating</p>
 
-
-
         
         <carousel class="review-wrapper">
             <slide v-for="review in reviews" :key="review.id">
@@ -60,13 +58,13 @@ export default {
                 },
                 {   
                     id: 1,
-                    text: "\"I'm a new custoasdfasdfsdalutely love my scarf. Super fast delivery...I will definitely order again. Many thanks.\"",
-                    name: "- Zoe"
+                    text: "\"Beautiful scarf, I love it!\"",
+                    name: "- Bridgett"
                 },
                 {   
                     id: 1,
-                    text: "\"I'm a new aasdfadsfasdfafasdfasdfasdfasdftely love my scarf. Super fast delivery...I will definitely order again. Many thanks.\"",
-                    name: "- Zoe"
+                    text: "\"Exactly as described and shipping was super fast! Thank you so much, RamNami!!\"",
+                    name: "- Lisa"
                 },
             ]
         }
@@ -81,6 +79,7 @@ export default {
     max-width: 1500px;
     margin: 0 auto;
     position: relative;
+    color: #2C3345;
 }
 
 .background {
@@ -104,8 +103,6 @@ export default {
     position: absolute;
     top: 30px;
     right: 150px;
-    /* border: 1px solid blue; */
-    /* height: 100%; */
     font-family: cursive;
     text-align: center;
     display: flex;
@@ -128,8 +125,6 @@ export default {
 }
 
 .review-wrapper {
-    /* border: 1px solid black; */
-
     height: 100%;
     width: 400px;
     margin-top: 15px;
@@ -165,11 +160,12 @@ export default {
 
 </style>
 
+
+<!-- button styling -->
 <style>
 .carousel__prev,
 .carousel__next {
 	box-sizing: content-box;
-	/* border: 5px solid white; */
     background-color: black;
     opacity: 0.5;
 }

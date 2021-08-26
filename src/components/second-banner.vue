@@ -35,13 +35,7 @@
 </template>
 
 <script>
-  import VueSlickCarousel from 'vue-slick-carousel'
-  // optional style for arrows & dots
-  import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
-export default {
-    components: { VueSlickCarousel },
 
-}
 </script>
 
 <style scoped>
@@ -74,7 +68,7 @@ export default {
 }
 
 p {
-    color: rgb(43, 43, 43);
+    color: #2C3345;
     height: 100%;
     width: 100%;
     display: flex;

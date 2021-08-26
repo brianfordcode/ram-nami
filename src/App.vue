@@ -6,7 +6,7 @@
     <secondBanner/>
     <thirdBanner/>
     <fourthBanner/>
-  
+    <fifthBanner/>
 
 
   <!-- <router-view/> -->
@@ -27,6 +27,7 @@
 </style>
 
 <script>
+import fifthBanner from './components/fifth-banner.vue'
 import fourthBanner from './components/fourth-banner.vue'
 import thirdBanner from './components/third-banner.vue'
 import secondBanner from './components/second-banner.vue'
@@ -35,7 +36,7 @@ import navBar from './components/nav-bar.vue'
 
 export default {
   components: {
-    navBar, firstBanner, secondBanner, thirdBanner, fourthBanner
+    navBar, firstBanner, secondBanner, thirdBanner, fourthBanner, fifthBanner
   }
 }
 </script>

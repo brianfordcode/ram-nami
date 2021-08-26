@@ -33,6 +33,7 @@ p {
     margin-top: 10px;
     font-family: cursive;
     font-size: 25px;
+    color: #2C3345;
 }
 
 .inner-wrapper {
