@@ -1,7 +1,7 @@
 <template>
     <div class="main-container">
         <!-- FIRST BUTTON -->
-        <router-link to="/about">
+        <router-link to="About">
           <div class="img-container">
             <div class="img-wrapper">
                 <div class="border">
@@ -12,6 +12,7 @@
           </div>
         </router-link>
         <!-- SECOND BUTTON -->
+        <router-link to="Products">
         <div class="img-container">
             <div class="img-wrapper">
                 <div class="border">
@@ -20,7 +21,9 @@
                 <img src="../assets/main/om-turquoise.png" alt="red-ganesha"> 
             </div>
         </div>
+        </router-link>
         <!-- THIRD BUTTON -->
+        <router-link to="/Donate">
         <div class="img-container">
             <div class="img-wrapper">
                 <div class="border">
@@ -29,6 +32,7 @@
                 <img src="../assets/main/krishna-blue.png" alt="red-ganesha"> 
             </div>
         </div>
+        </router-link>
               
             
         
