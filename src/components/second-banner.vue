@@ -1,7 +1,7 @@
 <template>
     <div class="main-container">
         <!-- FIRST BUTTON -->
-        <router-link to="About">
+        <router-link to="/about">
           <div class="img-container">
             <div class="img-wrapper">
                 <div class="border">
@@ -12,7 +12,7 @@
           </div>
         </router-link>
         <!-- SECOND BUTTON -->
-        <router-link to="Products">
+        <router-link to="/products">
         <div class="img-container">
             <div class="img-wrapper">
                 <div class="border">
@@ -23,7 +23,7 @@
         </div>
         </router-link>
         <!-- THIRD BUTTON -->
-        <router-link to="/Donate">
+        <router-link to="/donate">
         <div class="img-container">
             <div class="img-wrapper">
                 <div class="border">

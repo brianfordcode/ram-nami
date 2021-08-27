@@ -18,8 +18,14 @@ import secondBanner from '../components/second-banner.vue'
 import firstBanner from '../components/first-banner.vue'
 
 export default {
+  mounted () {
+  window.scrollTo(0, 0)
+  },
+
   name: 'Home',
+
   components: { firstBanner, secondBanner, thirdBanner, fourthBanner, fifthBanner }
+
 }
 </script>
 
