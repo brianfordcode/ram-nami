@@ -24,8 +24,7 @@ export default {
 <style scoped>
 
 .container {
-    /* border: 1px solid blue; */
-    margin: 15px auto;
+    margin: 15px auto 25px auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -33,9 +32,9 @@ export default {
 }
 
 .form {
-    /* border: 1px solid blue; */
     height: 710px;
     overflow: hidden;
+    
 }
 
 iframe {
@@ -45,6 +44,7 @@ iframe {
 
 img {
     height: 500px;
+    border-radius: 20px;
 }
 
 </style>

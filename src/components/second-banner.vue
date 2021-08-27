@@ -1,14 +1,16 @@
 <template>
     <div class="main-container">
         <!-- FIRST BUTTON -->
-        <div class="img-container">
+        <router-link to="/about">
+          <div class="img-container">
             <div class="img-wrapper">
                 <div class="border">
                   <p>About Us</p>
                 </div>
                 <img src="../assets/main/red-ganesha.png" alt="red-ganesha"> 
             </div>
-        </div>
+          </div>
+        </router-link>
         <!-- SECOND BUTTON -->
         <div class="img-container">
             <div class="img-wrapper">
