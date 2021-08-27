@@ -17,7 +17,8 @@ export default {
   height: 50px;
   width: 100%;
   box-shadow: 0px 0px 33px -20px #000000;
-  z-index: 1000;
+  z-index: 10000000;
+  background-color: white;
 }
 
 </style>

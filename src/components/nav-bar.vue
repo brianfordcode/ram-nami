@@ -1,7 +1,9 @@
 <template>
+   
+   
    <div id="nav">
      <div class="container">
-      <img class="rm-logo" src="../assets/logo/logo-trans-back.png" alt="rm-logo"/>
+      <router-link to="/"><img class="rm-logo" src="../assets/logo/logo-trans-back.png" alt="rm-logo"/></router-link>
       <div class="links-container">
         <a href="/" target="_blank"><img class="social mail" src="../assets/social/icons8-mail.svg"/></a>
         <a href="https://www.facebook.com"><img class="social facebook" src="../assets/social/icons8-facebook.svg"/></a>
@@ -9,12 +11,6 @@
       </div>
      </div>
   </div>
-
-
-<!-- <router-link to="/">Home</router-link> |
-<router-link to="/about">About</router-link> -->
-
-
 
 </template>
 
@@ -33,7 +29,7 @@ export default {
       height: 50px;
       width: 100%;
       background: white;
-      z-index: 50;
+      z-index: 10000000;
       box-shadow: 0px 0px 33px -20px #000000;
   }
 
