@@ -1,35 +1,24 @@
 <template>
   <div class="container">
     <div class="text-wrapper">
-        <p class="customers">Customers Love Us!</p>
+        <h1 class="customers">Customers Love Us!</h1>
         <img class="stars" src="../assets/main/5-star-rating.png" alt="">
-        <p class="average">Average 4.9 Star Rating</p>
+        <h3 class="average">Average 4.9 Star Rating</h3>
 
         
         <carousel class="review-wrapper">
             <slide v-for="review in reviews" :key="review.id">
                 <div class="review">
-                    <p>{{ review.text }}</p>
-                    <p class="review-name">{{ review.name }}</p>
+                    <h3>{{ review.text }}</h3>
+                    <h3 class="review-name">{{ review.name }}</h3>
                 </div>
             </slide>
             <template #addons>
                 <navigation />
             </template>
         </carousel>
-            
-
-
-
 
     </div>
-    
-
-    <div class="background">
-      <img class="bg-left" src="../assets/main/orange-om-90-trans-back.png" draggable="false" alt="bg-left">
-      <img class="bg-right" src="../assets/background/bg-design-right.png" draggable="false" alt="bg-right">
-    </div>
-
   </div>
 </template>
 
@@ -76,43 +65,28 @@ export default {
 <style scoped>
 
 .container {
+    background-image: url("../assets/background/bg-design-right.png"), url("../assets/main/orange-om-90-trans-back.png");
+    background-size: 350px auto, 500px auto;
+    background-position: right , left 50%;
+    background-repeat: no-repeat, no-repeat;
     max-width: 1500px;
     margin: 0 auto;
-    position: relative;
-    color: #2C3345;
-}
-
-.background {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 500px;
-}
-
-.bg-right {
-    opacity: 0.15;
-    height: 400px;
-    z-index: -1;
-}
-
-.bg-left {
-    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .text-wrapper {
-    position: absolute;
-    top: 30px;
-    right: 150px;
+    height: 400px;
+    width: 500px;
+    margin-right: 10%;
+    color: #2C3345;
     font-family: cursive;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-}
-
-.customers {
-    font-size: 30px;
 }
 
 .stars {
@@ -120,26 +94,8 @@ export default {
     width: 400px;
 }
 
-.average {
-    font-size: 20px;
-}
-
 .review-wrapper {
-    height: 100%;
     width: 400px;
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.arrow {
-    opacity: 0.5;
-    cursor: pointer;
-    transition: .1s ease-in-out;
-}
-.arrow:hover {
-    transform: scale(1.1);
 }
 
 .review {
@@ -147,9 +103,6 @@ export default {
     border-radius: 20px;
     box-shadow: 0px 0px 33px -20px #000000;
     background-color: rgba(255,255,255,0.75);
-    text-align: center;
-    width: 350px;
-    font-size: 20px;
     margin: 20px;
 }
 
@@ -162,11 +115,18 @@ export default {
 
 
 <!-- button styling -->
+
 <style>
 .carousel__prev,
 .carousel__next {
 	box-sizing: content-box;
     background-color: black;
     opacity: 0.5;
+    transition: .1s ease-in-out;
+}
+
+.carousel__prev:hover,
+.carousel__next:hover {
+    opacity: .75;
 }
 </style>
