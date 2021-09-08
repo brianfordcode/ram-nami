@@ -87,7 +87,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .stars {
@@ -111,6 +111,22 @@ export default {
     text-align: right;
     padding-right: 50px;
 }
+
+@media screen and (max-width: 1000px) {
+    .container {
+        background-image: none;
+    }
+
+    .text-wrapper {
+        margin: 0 auto;
+        transform: scale(0.75);
+        background-color: rgba(255,255,255,0.7);
+        border-radius: 20px;
+    }
+}
+
+
+
 
 </style>
 

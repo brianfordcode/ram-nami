@@ -20,13 +20,12 @@ export default {
 
 <style scoped>
 .container {
-    height: 150px;
-    box-shadow: ;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 0px 33px -20px #000000;
+    /* border: 1px solid green; */
 }
 
 p {
@@ -39,18 +38,23 @@ p {
 .inner-wrapper {
     /* border: 1px solid blue; */
     height: 100%;
+    margin: 20px;
     width: 90%;
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    /* padding: 20px; */
 }
 
 .logo {
     height: auto;
     width: 100px;
     transition: .1s ease-in-out;
+    /* border: 1px solid purple; */
+    margin: 15px;
 }
 
 .logo:hover {
