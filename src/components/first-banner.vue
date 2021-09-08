@@ -26,20 +26,34 @@ export default {
     padding-top: 50px;
     max-width: 1500px;
     margin: 0 auto;
-}
-
-.quote {
-    height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     /* border: 1px solid blue; */
+}
+
+.quote {
+    /* height: 100%; */
+    margin-left: 10%;
     font-family: cursive;
     font-size: 35px;
     color: #2C3345;
     text-align: right;
-    max-width: 80%;
-    margin: 0 auto;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.65);
+    box-shadow: 0px 0px 33px -20px #000000;
+    padding: 15px;
+}
+
+@media screen and (max-width: 700px) {
+.container {
+    justify-content: space-around;
+  }
+
+  .quote {text-align: center;margin: 0 50px;
+     font-size: 25px;
+  }
+
 }
 
 </style>

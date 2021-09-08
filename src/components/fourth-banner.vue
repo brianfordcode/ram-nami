@@ -87,6 +87,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    border: 1px solid blue;
 }
 
 .stars {
