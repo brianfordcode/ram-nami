@@ -1,99 +1,79 @@
 <template>
-
   <div class="main-container">
-
+    <div class="box">
       <div class="form">
         <iframe src="https://form.jotform.com/212386503284051" frameborder="0"></iframe>
       </div>
-
-    <div class="background">
-      <img draggable="false" src="../assets/background/bg-design-left.png" alt="bg-design-left">
-      <img draggable="false" src="../assets/background/bg-design-right.png" alt="bg-design-right">
     </div>
-
   </div>
-
 </template>
 
 <script>
+import thirdBanner from "../components/third-banner.vue"
 
 export default {
-
+  components: { thirdBanner },
+  props: [ 'title', 'text' ]
 }
 </script>
 
 <style scoped>
+  .main-container {
+    padding-top: 50px; /*f or navbar */
+    background-image: url('../assets/background/bg-design-left.png'), url('../assets/background/bg-design-right.png');
+    background-repeat: no-repeat;
+    background-position: left 50%, right 50%;
+    background-size: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+  }
 
-.main-container {
-  padding-top: 50px; 
-  position: relative;
-  height: 1200px
-}
+  .box {
+    width: 90%;
+    max-width: 800px;
+    height: 100;
+    margin: 15px 0;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.75);
+    box-shadow: 0px 0px 33px -20px #000000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: cursive;
+  }
 
-.form {
-  height: 1060px;
-  overflow: hidden;
-  width: min-content;
-  box-shadow: 0px 0px 33px -20px #000000;
-  /* opacity: 0.75; */
-  background-color: white;
-  z-index: 100000;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0; 
-  right: 0; 
-  /* margin: auto; */
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10%;
-}
+  .form {
+    width: 100%;
+    height: 1030px;
+    overflow: hidden;
+  }
 
-iframe {
-    width: 800px;
-    height: 1175px;
-}
+  iframe {
+    width: 100%;
+    height: 1200px;
+  }
 
-.text {
-  color: #2C3345;
-  opacity: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
+  @media screen and (max-width: 854px) {
+    .box {
+      height: 1000px;
+    }
+   }
 
-h1 {
-  padding-top: 20px;
-  font-family: cursive;
-}
+  @media screen and (max-width: 534px) {
+    .box {
+      height: 1700px;
+    }
 
-p {
-  font-family: arial;
-  padding: 0 50px ;
-  text-align: center;
-}
-
-.stores {
-  width: 100%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-/* BACKGROUND */
-.background {
-  height: calc(100vh - 100px); /* account for navbar and footer */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-img {
-  height: 70%;
-  opacity: 0.2;
-}
-
-
+     iframe {
+       height: 1800px;
+     }
+    .form {
+      height: 1700px;
+    }
+    
+  }
 
 </style>

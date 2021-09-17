@@ -1,11 +1,11 @@
 <template>
 
-  <navBar class="nav-bar"/>
+<div class="app-container">
+    <navBar class="nav-bar"/>
      <router-view/>
   <bottomFooter/>
+</div>
 
-
- 
 
 </template>
 
@@ -15,6 +15,7 @@
   margin: 0;
   padding: 0;
 }
+
 
 </style>
 
