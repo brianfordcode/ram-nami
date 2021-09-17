@@ -2,11 +2,11 @@
   <div class="container">
       <p>Visit Our Online Stores:</p>
       <div class="inner-wrapper">
-          <a href="https://www.amazon.com" target="_blank"><img class="logo" src="../assets/stores/amazon-logo.png" alt="amazon"></a>
-          <a href="https://www.etsy.com" target="_blank"><img class="logo" src="../assets/stores/etsy-logo.png" alt="amazon"></a>
-          <a href="https://www.poshmark.com" target="_blank"><img class="logo" src="../assets/stores/poshmark-logo.png" alt="amazon"></a>
-          <a href="https://www.mercari.com" target="_blank"><img class="logo" src="../assets/stores/mercari-logo.svg" alt="amazon"></a>
-          <a href="https://www.ebay.com" target="_blank"><img class="logo" src="../assets/stores/ebay-logo.png" alt="amazon"></a>
+          <a href="https://www.amazon.com/s?rh=n%3A7141123011%2Cp_4%3ARam+Nami&ref=bl_sl_s_ap_web_7141123011" target="_blank"><img class="logo" src="../assets/stores/amazon-logo.png" alt="amazon"></a>
+          <a href="https://www.etsy.com/shop/RamNami?ref=simple-shop-header-name&listing_id=813219514" target="_blank"><img class="logo" src="../assets/stores/etsy-logo.png" alt="amazon"></a>
+          <a href="https://poshmark.com/closet/ramnami" target="_blank"><img class="logo" src="../assets/stores/poshmark-logo.png" alt="amazon"></a>
+          <a href="https://www.mercari.com/u/651837242/" target="_blank"><img class="logo" src="../assets/stores/mercari-logo.svg" alt="amazon"></a>
+          <a href="https://www.ebay.com/usr/ramnami" target="_blank"><img class="logo" src="../assets/stores/ebay-logo.png" alt="amazon"></a>
           
       </div>
   </div>

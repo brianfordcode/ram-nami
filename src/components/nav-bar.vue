@@ -5,9 +5,9 @@
      <div class="container">
       <router-link to="/"><img class="rm-logo" src="../assets/logo/logo-trans-back.png" alt="rm-logo"/></router-link>
       <div class="links-container">
-        <a href="/" target="_blank"><img class="social mail" src="../assets/social/icons8-mail.svg"/></a>
-        <a href="https://www.facebook.com"><img class="social facebook" src="../assets/social/icons8-facebook.svg"/></a>
-        <a href="https://www.instagram.com"><img class="social instagram" src="../assets/social/icons8-instagram-logo.svg"/></a>
+        <img @click="scrollToBottom" class="social mail" src="../assets/social/icons8-mail.svg"/>
+        <a href="https://www.facebook.com/ramnamitradingco" target="_blank"><img class="social facebook" src="../assets/social/icons8-facebook.svg"/></a>
+        <a href="https://www.instagram.com/ramnamitradingco" target="_blank"><img class="social instagram" src="../assets/social/icons8-instagram-logo.svg"/></a>
       </div>
      </div>
   </div>
@@ -18,7 +18,19 @@
 
 <script>
 export default {
+  methods: {
+    scrollToBottom() {
+      this.windowHeight = document.body.scrollHeight 
 
+    const scrollOptions = {
+      top: this.windowHeight,
+      behavior: "smooth"
+    }
+
+      window.scroll(scrollOptions);
+
+    }
+  }
 }
 </script>
 
@@ -51,7 +63,8 @@ export default {
   .social {
     height: 25px;
     margin: 0 5px;
-    transition: .15s ease-in-out
+    transition: .15s ease-in-out;
+    cursor: pointer;
   }
 
   .social:hover {

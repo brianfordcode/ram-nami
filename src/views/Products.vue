@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import thirdBanner from "../components/third-banner.vue"
+import storesBanner from "../components/stores-banner.vue"
 
 export default {
-  components: { thirdBanner },
+  components: { storesBanner },
   props: [ 'title', 'text' ]
 }
 </script>

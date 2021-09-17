@@ -1,27 +1,27 @@
 <template>
 
-    <firstBanner/>
-    <secondBanner/>
-    <thirdBanner/>
-    <fourthBanner/>
-    <fifthBanner/>
+    <quoteBanner/>
+    <linksBanner/>
+    <storesBanner/>
+    <reviewsBanner/>
+    <contactBanner/>
 
 
 
 </template>
 
 <script>
-import fifthBanner from '../components/fifth-banner.vue'
-import fourthBanner from '../components/fourth-banner.vue'
-import thirdBanner from '../components/third-banner.vue'
-import secondBanner from '../components/second-banner.vue'
-import firstBanner from '../components/first-banner.vue'
+import contactBanner from '../components/contact-banner.vue'
+import reviewsBanner from '../components/reviews-banner.vue'
+import storesBanner from '../components/stores-banner.vue'
+import linksBanner from '../components/links-banner.vue'
+import quoteBanner from '../components/quote-banner.vue'
 
 export default {
 
   name: 'Home',
 
-  components: { firstBanner, secondBanner, thirdBanner, fourthBanner, fifthBanner }
+  components: { quoteBanner, linksBanner, storesBanner, reviewsBanner, contactBanner }
 
 }
 </script>

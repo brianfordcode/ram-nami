@@ -153,9 +153,11 @@ export default {
 }
 
 @media screen and (max-width: 1000px) {
-    .carousel__prev,
+    .carousel__prev {
+        transform: translate(10px, -20px);
+    }
     .carousel__next {
-        display: none;
+        transform: translate(-10px, -20px);
     }
 }
 </style>

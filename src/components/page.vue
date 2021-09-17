@@ -3,16 +3,16 @@
     <div class="box">
         <h1 class="title">{{ title }}</h1>
         <p class="text">{{ text }}</p>
-        <thirdBanner class="stores"/>
+        <storesBanner class="stores"/>
     </div>
   </div>
 </template>
 
 <script>
-import thirdBanner from "../components/third-banner.vue"
+import storesBanner from "./stores-banner.vue"
 
 export default {
-  components: { thirdBanner },
+  components: { storesBanner },
   props: [ 'title', 'text' ]
 }
 </script>
@@ -28,6 +28,7 @@ export default {
     justify-content: space-around;
     align-items: center;
     min-height: calc(100vh - 100px);
+    overflow: hidden;
   }
 
   .box {
@@ -42,6 +43,7 @@ export default {
     flex-direction: column;
     align-items: center;
     font-family: cursive;
+    overflow: hidden;
   }
 
   .title {
@@ -55,6 +57,7 @@ export default {
 
   .stores {
     width: 100%;
+    margin-top: 20px;
   }
 
 </style>
