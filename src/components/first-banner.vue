@@ -29,7 +29,6 @@ export default {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* border: 1px solid blue; */
 }
 
 .quote {
@@ -50,8 +49,10 @@ export default {
     justify-content: space-around;
   }
 
-  .quote {text-align: center;margin: 0 50px;
-     font-size: 25px;
+  .quote {
+    text-align: center;
+    margin: 0 50px;
+    font-size: 25px;
   }
 
 }

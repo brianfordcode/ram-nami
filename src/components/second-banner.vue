@@ -37,7 +37,6 @@
   justify-content: space-around;
   align-items: center;
   max-width: 1250px;
-  
 }
 
 @media screen and (max-width: 700px) {

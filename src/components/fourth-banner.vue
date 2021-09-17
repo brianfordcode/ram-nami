@@ -78,16 +78,15 @@ export default {
 }
 
 .text-wrapper {
+    /* border: 1px solid blue; */
     height: 400px;
-    width: 500px;
-    margin-right: 10%;
+    margin: 0 10% 0 0;
     color: #2C3345;
     font-family: cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* border: 1px solid blue; */
 }
 
 .stars {
@@ -116,13 +115,19 @@ export default {
     .container {
         background-image: none;
     }
-
     .text-wrapper {
         margin: 0 auto;
-        transform: scale(0.75);
-        background-color: rgba(255,255,255,0.7);
-        border-radius: 20px;
+        width: 100%;
     }
+    .stars {
+        width: 300px;
+    }
+
+    .review-wrapper {
+        max-width: 500px;
+        width: 100%;
+    }
+
 }
 
 
@@ -145,5 +150,12 @@ export default {
 .carousel__prev:hover,
 .carousel__next:hover {
     opacity: .75;
+}
+
+@media screen and (max-width: 1000px) {
+    .carousel__prev,
+    .carousel__next {
+        display: none;
+    }
 }
 </style>
